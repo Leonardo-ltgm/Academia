@@ -21,4 +21,36 @@ public class Administracao {
     @ManyToOne
     @JoinColumn(name = "aluno")
     private Aluno nome;
+
+    public int getMatricula() {
+        return matricula;
+    }
+
+    public Date getInicio() {
+        return inicio;
+    }
+
+    public boolean isMensalidade() {
+        return mensalidade;
+    }
+
+    public Aluno getNome() {
+        return nome;
+    }
+
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
+
+    public void setInicio(Date inicio) {
+        this.inicio = inicio;
+    }
+
+    public void setMensalidade(boolean mensalidade) {
+        this.mensalidade = mensalidade;
+    }
+
+    public void setNome(Aluno nome) {
+        this.nome = nome;
+    }
 }
